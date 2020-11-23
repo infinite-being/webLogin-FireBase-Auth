@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Burhanuddin</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>CC-SCE LOGIN</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script> 
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAvqC9a946s0lMBaBeK7rvHNEd41f7Tx08",
+    authDomain: "fir-weblogin-d22d4.firebaseapp.com",
+    databaseURL: "https://fir-weblogin-d22d4.firebaseio.com",
+    projectId: "fir-weblogin-d22d4",
+    storageBucket: "fir-weblogin-d22d4.appspot.com",
+    messagingSenderId: "441036095248",
+    appId: "1:441036095248:web:84df305d680211871eef95",
+    measurementId: "G-W9NSJCKM7E"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  <script src="index.js"></script>
+
+</body>
+</html>
